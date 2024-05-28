@@ -1,0 +1,93 @@
+.likedPokemonGridContainer {
+  width: 100%;
+  text-align: center;
+  color: var(--text-light); /* Use CSS variable for text color */
+  transition: color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the grid horizontally */
+}
+
+.dark-mode.likedPokemonGridContainer {
+  color: var(--text-dark); /* Change text color in dark mode */
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.likedPokemonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 20px; /* Space between items */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: var(--card-background-light);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.dark-mode.likedPokemonGrid {
+  background: var(--card-background-dark);
+  border-color: #888;
+}
+
+.pokemonItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center align content */
+  background: var(--card-background-light);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: background 0.3s, border-color 0.3s;
+  padding: 10px;
+  width: 150px; /* Set fixed width */
+  height: 150px; /* Set fixed height to make it square */
+}
+
+.dark-mode.pokemonItem {
+  background: var(--card-background-dark);
+  border-color: #888;
+}
+
+.pokemonImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.pokemonName {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--text-light); /* Use CSS variable for text color */
+  transition: color 0.3s;
+  text-align: center; /* Center align text */
+}
+
+.dark-mode.pokemonName {
+  color: var(--text-dark); /* Change text color in dark mode */
+}
+
+.pokemonRemove {
+  margin-top: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-light); /* Use CSS variable for text color */
+  transition: color 0.3s;
+}
+
+.dark-mode.pokemonRemove {
+  color: var(--text-dark); /* Change text color in dark mode */
+}
+
+.pokemonRemove:hover {
+  color: #f13c20; /* Change color on hover */
+}
+
+.dark-mode.pokemonRemove:hover {
+  color: #f13c20; /* Change color on hover */
+}

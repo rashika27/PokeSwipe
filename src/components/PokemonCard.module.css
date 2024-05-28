@@ -1,0 +1,76 @@
+.card {
+  width: 350px;
+  height: 400px;
+  background: var(--card-background-light);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, border-color 0.3s;
+  color: var(--text-light);
+}
+
+.dark-mode .card {
+  background: var(--card-background-dark);
+  border-color: #888;
+  color: white ;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abilities, .types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.abilityBox, .typeBox {
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding: 0 10px;
+}
+
+.likeButton, .dislikeButton {
+  width: 45%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.likeButton {
+  background-color: green;
+  color: white;
+}
+
+.dislikeButton {
+  background-color: red;
+  color: white;
+}

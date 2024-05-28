@@ -1,0 +1,50 @@
+:root {
+  --background-light: #f0f0f0;
+  --background-dark: #333;
+  --card-background-light: #fff;
+  --card-background-dark: #444;
+  --text-light: #000;
+  --text-dark: #fff;
+}
+
+body {
+  font-family: 'Comic Neue', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card, .welcomeCard, .likedPokemonGrid {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.dark-mode .card, .dark-mode .welcomeCard, .dark-mode .likedPokemonGrid {
+  border-color: #888;
+}
+
+.dark-mode .card {
+  background: var(--card-background-dark);
+  color: var(--text-dark);
+}
+
+.dark-mode .welcomeCard {
+  background: var(--card-background-dark);
+  color: var(--text-dark);
+}
+
+.dark-mode .likedPokemonGrid {
+  background: var(--card-background-dark);
+}

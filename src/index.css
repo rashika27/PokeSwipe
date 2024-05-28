@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body.dark-mode {
+  --card-background-light: #333;
+  --card-background-dark: #222;
+  --text-color-light: #fff;
+  --text-color-dark: #ddd;
+}
+
+/* Default light mode styles */
+body {
+  --card-background-light: #fff;
+  --card-background-dark: #f0f0f0;
+  --text-color-light: #000;
+  --text-color-dark: #333;
+}
+
+/* Other global styles */
+
