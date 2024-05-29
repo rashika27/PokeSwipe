@@ -30,7 +30,7 @@ const App = () => {
       name: data.name,
       image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
       abilities: data.abilities.map((ability) => ability.ability.name),
-      types: data.types.map((type) => type.type.name)
+      types: data.types.map((type) => type.type.name),
     };
     setPokemon(newPokemon);
   };
@@ -45,7 +45,7 @@ const App = () => {
   };
 
   const toggleDarkMode = () => {
-    setDarkMode(prevDarkMode => !prevDarkMode);
+    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
   if (showWelcome) {

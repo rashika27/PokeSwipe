@@ -1,3 +1,5 @@
+/* PokemonCard.module.css */
+
 .card {
   width: 350px;
   height: 400px;
@@ -10,14 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: background 0.3s, border-color 0.3s;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
   color: var(--text-color-light);
 }
 
 .dark-mode .card {
-  background: var(--card-background-dark);
   border-color: #888;
-  color: white ;
 }
 
 .image {
@@ -32,22 +32,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .abilities, .types {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 5px;
-  margin: 5px 0;
 }
 
-.abilityBox, .typeBox {
-  background-color: orange;
+.typeBox {
+  background-color: var(--type-box-background-light);
   color: white;
   padding: 7px;
   border-radius: 5px;
   font-size: 14px;
 }
+
+.abilityBox {
+  background-color: var(--ability-box-background);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.dark-mode .typeBox {
+  background-color: var(--type-box-background-dark);
+  color: var(--button-text-color-dark); /* Change text color to white in dark mode */
+}
+
+.dark-mode .abilityBox {
+  background-color: var(--ability-box-background); /* Ensure the background color is set */
+  color: var(--button-text-color-dark); /* Change text color to white in dark mode */
+}
+
 
 .buttons {
   display: flex;
@@ -63,14 +82,23 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  color: white
 }
 
 .likeButton {
-  background-color: green;
-  color: white;
+  background-color: var(--like-button-background-light);
+  color: var(--text-color-light);
+
 }
 
 .dislikeButton {
-  background-color: red;
-  color: white;
+  background-color: var(--dislike-button-background-light);
+  color: var(--text-color-light);
+}
+
+
+.dark-mode .likeButton, 
+.dark-mode .dislikeButton {
+  color: var(--button-text-color-dark);
 }

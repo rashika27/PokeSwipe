@@ -1,10 +1,23 @@
 :root {
-  --background-light: #f0f0f0;
-  --background-dark: #333;
   --card-background-light: #fff;
-  --card-background-dark: #444;
-  --text-light: #000;
-  --text-dark: #fff;
+  --card-background-dark: #333;
+  --text-color-light: #000;
+  --text-color-dark: #fff;
+  --like-button-background-light: green;
+  --like-button-background-dark: green;
+  --dislike-button-background-light: red;
+  --dislike-button-background-dark: red;
+  --button-text-color-light: white;
+  --button-text-color-dark: white;
+  --type-box-background-light: skyblue;
+  --type-box-background-dark: brown;
+  --ability-box-background: orange;
+}
+
+.dark-mode {
+  --card-background-light: var(--card-background-dark);
+  --text-color-light: var(--text-color-dark);
+  --type-box-background-light: var(--type-box-background-dark);
 }
 
 body {
