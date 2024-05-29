@@ -44,9 +44,9 @@
 .abilityBox, .typeBox {
   background-color: orange;
   color: white;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .buttons {

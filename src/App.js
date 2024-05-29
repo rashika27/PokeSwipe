@@ -4,7 +4,6 @@ import styles from './App.module.css';
 import WelcomeCard from './components/WelcomeCard';
 import PokemonCard from './components/PokemonCard';
 import LikedPokemonGrid from './components/LikedPokemonList';
-import DarkModeToggle from './components/DarkModeToggle';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,7 +54,6 @@ const App = () => {
 
   return (
     <div className={`${styles.container} ${darkMode ? 'dark-mode' : ''}`}>
-      <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       {pokemon && (
         <PokemonCard
           pokemon={pokemon}
