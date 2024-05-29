@@ -1,15 +1,15 @@
 .likedPokemonGridContainer {
   width: 100%;
   text-align: center;
-  color: var(--text-light); /* Use CSS variable for text color */
+  color: var(--text-light);
   transition: color 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the grid horizontally */
+  align-items: center;
 }
 
-.dark-mode.likedPokemonGridContainer {
-  color: var(--text-dark); /* Change text color in dark mode */
+body.dark-mode .likedPokemonGridContainer {
+  color: var(--text-dark);
 }
 
 .heading {
@@ -19,37 +19,40 @@
 
 .likedPokemonGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two items per row */
-  gap: 20px; /* Space between items */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
   background: var(--card-background-light);
-  transition: background 0.3s, border-color 0.3s;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
 }
 
-.dark-mode.likedPokemonGrid {
+body.dark-mode .likedPokemonGrid {
   background: var(--card-background-dark);
   border-color: #888;
+  color: var(--text-dark);
 }
 
 .pokemonItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center align content */
+  justify-content: center;
   background: var(--card-background-light);
   border: 2px solid #ccc;
   border-radius: 10px;
-  transition: background 0.3s, border-color 0.3s;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
   padding: 10px;
-  width: 150px; /* Set fixed width */
-  height: 150px; /* Set fixed height to make it square */
+  width: 150px;
+  height: 150px;
+  color: var(--text-color-light);
 }
 
-.dark-mode.pokemonItem {
+body.dark-mode .pokemonItem {
   background: var(--card-background-dark);
   border-color: #888;
+  color: var(--text-dark);
 }
 
 .pokemonImage {
@@ -61,33 +64,11 @@
 .pokemonName {
   margin-top: 10px;
   font-size: 16px;
-  color: var(--text-light); /* Use CSS variable for text color */
+  color: var(--text-color-light);
   transition: color 0.3s;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
-.dark-mode.pokemonName {
-  color: var(--text-dark); /* Change text color in dark mode */
-}
-
-.pokemonRemove {
-  margin-top: 10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: var(--text-light); /* Use CSS variable for text color */
-  transition: color 0.3s;
-}
-
-.dark-mode.pokemonRemove {
-  color: var(--text-dark); /* Change text color in dark mode */
-}
-
-.pokemonRemove:hover {
-  color: #f13c20; /* Change color on hover */
-}
-
-.dark-mode.pokemonRemove:hover {
-  color: #f13c20; /* Change color on hover */
+body.dark-mode .pokemonName {
+  color: var(--text-dark);
 }
